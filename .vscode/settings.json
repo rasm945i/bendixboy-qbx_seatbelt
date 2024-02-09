@@ -1,0 +1,8 @@
+{
+    "Lua.diagnostics.globals": [
+        "qbx",
+        "cache",
+        "locale",
+        "lib"
+    ]
+}

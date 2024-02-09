@@ -5,6 +5,8 @@ description 'qbx_seatbelt'
 repository 'https://github.com/Qbox-project/qbx_seatbelt'
 version '1.0.0'
 
+dependency 'bendixboy-speedometer'
+
 ox_lib 'locale'
 shared_script '@ox_lib/init.lua'
 
