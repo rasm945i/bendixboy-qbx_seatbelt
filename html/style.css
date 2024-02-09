@@ -3,6 +3,7 @@
     bottom: 2rem;
     left: 20rem;
     color: orange;
+    display: none;
 }
 
 #wrapper img {

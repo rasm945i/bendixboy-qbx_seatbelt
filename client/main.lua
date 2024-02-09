@@ -8,7 +8,7 @@ local minSpeeds = {
 }
 
 -- Functions
-local function isInvalidVehicle(vehicle)
+function IsInvalidVehicle(vehicle)
     local class = GetVehicleClass(vehicle)
     return class == 8 or class == 13 or class == 14
 end
@@ -61,7 +61,7 @@ lib.addKeybind({
     defaultKey = config.keybind,
     onPressed = function()
         if not cache.vehicle or IsPauseMenuActive() then return end
-        if isInvalidVehicle(cache.vehicle) then return end
+        if IsInvalidVehicle(cache.vehicle) then return end
 
         toggleSeatbelt()
     end
