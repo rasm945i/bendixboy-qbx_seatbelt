@@ -49,9 +49,7 @@ Wait(200)
 -- Determine if minimap should be shown when script is loaded
 local car = GetVehiclePedIsIn(cache.ped, false)
 if car == 0 or IsInvalidVehicle(car) then
-    print("HIDE HUD ITEM ON STARTUP")
     exports['bendixboy-hudmanager']:HideHudItem(HUD_NAME)
 else
-    print("SHOW SEATBELT ON STARTUP")
     exports['bendixboy-hudmanager']:ShowHudItem(HUD_NAME)
 end
