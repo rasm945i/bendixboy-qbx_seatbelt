@@ -28,6 +28,7 @@ local function toggleSeatbelt()
     playerState.seatbelt = seatbeltOn
     SetFlyThroughWindscreenParams(seatbeltOn and minSpeeds.buckled or minSpeeds.unbuckled, 1.0, 17.0, 10.0)
     playBuckleSound(seatbeltOn)
+    SetSeatbeltIconVisibility(seatbeltOn)
 end
 
 local function seatbelt()

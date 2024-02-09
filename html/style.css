@@ -1,0 +1,11 @@
+#wrapper {
+    position: absolute;
+    bottom: 2rem;
+    left: 20rem;
+    color: orange;
+}
+
+#wrapper img {
+    max-width: 35px;
+    filter: invert(47%) sepia(75%) saturate(2939%) hue-rotate(6deg) brightness(111%) contrast(102%);
+}

@@ -5,7 +5,12 @@ description 'qbx_seatbelt'
 repository 'https://github.com/Qbox-project/qbx_seatbelt'
 version '1.0.0'
 
-dependency 'bendixboy-speedometer'
+dependencies {
+    'bendixboy-hudmanager',
+    'bendixboy-speedometer'
+}
+
+ui_page 'html/seatbelt.html'
 
 ox_lib 'locale'
 shared_script '@ox_lib/init.lua'
@@ -21,7 +26,10 @@ files {
     'locales/*.json',
     'config/*.lua',
     'audiodirectory/seatbelt_sounds.awc',
-    'data/seatbelt_sounds.dat54.rel'
+    'data/seatbelt_sounds.dat54.rel',
+    'html/seat-belt.png',
+    'html/seatbelt.html',
+    'html/style.css'
 }
 
 data_file 'AUDIO_WAVEPACK' 'audiodirectory'
