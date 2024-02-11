@@ -3,13 +3,13 @@ local playerState = LocalPlayer.state
 local speedMultiplier = exports["bendixboy-speedometer"]:GetSpeedMultiplier()
 local minSpeeds = {
     unbuckled = config.minSpeedUnbuckled / speedMultiplier,
-    buckled = config.minSpeedBuckled / speedMultiplier,
-    harness = config.harness.minSpeed / speedMultiplier
+    buckled = config.minSpeedBuckled / speedMultiplier
 }
 
 -- Functions
 function IsInvalidVehicle(vehicle)
     local class = GetVehicleClass(vehicle)
+    -- NOTE THESE VALUES ARE ALSO STATICALLY TYPED IN HUD INTEGRATION
     return class == 8 or class == 13 or class == 14
 end
 

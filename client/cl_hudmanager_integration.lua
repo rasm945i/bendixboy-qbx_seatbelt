@@ -29,27 +29,6 @@ exports['bendixboy-hudmanager']:RegisterHudItem({
     shouldBeDisplayed = false
 })
 
-
-lib.onCache('vehicle', function(value)
-    if not value then
-        exports['bendixboy-hudmanager']:HideHudItem(HUD_NAME)
-        return
-    end
-
-    if IsInvalidVehicle(value) then
-        return
-    end
-
-    exports['bendixboy-hudmanager']:ShowHudItem(HUD_NAME)
-
-end)
-
-Wait(200)
-
--- Determine if minimap should be shown when script is loaded
-local car = GetVehiclePedIsIn(cache.ped, false)
-if car == 0 or IsInvalidVehicle(car) then
-    exports['bendixboy-hudmanager']:HideHudItem(HUD_NAME)
-else
-    exports['bendixboy-hudmanager']:ShowHudItem(HUD_NAME)
-end
+-- NOTE THESE VALUES ARE ALSO STATICALLY TYPED IN HUD INTEGRATION
+-- motorcycle, cycle and boats
+exports['bendixboy-hudmanager']:HudComponentVehicleOnly(HUD_NAME, {8, 13, 14})
