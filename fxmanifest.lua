@@ -10,8 +10,6 @@ dependencies {
     'bendixboy-speedometer'
 }
 
-ui_page 'html/seatbelt.html'
-
 ox_lib 'locale'
 shared_script '@ox_lib/init.lua'
 
@@ -28,9 +26,6 @@ files {
     'config/*.lua',
     'audiodirectory/seatbelt_sounds.awc',
     'data/seatbelt_sounds.dat54.rel',
-    'html/seat-belt.png',
-    'html/seatbelt.html',
-    'html/style.css'
 }
 
 data_file 'AUDIO_WAVEPACK' 'audiodirectory'
