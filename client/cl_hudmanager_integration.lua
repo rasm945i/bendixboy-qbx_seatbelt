@@ -1,15 +1,11 @@
 local HUD_NAME = 'bendixboy-qbx_seatbelt:seatbelt-icon'
 
 local function showSeatbeltIcon()
-    SendNUIMessage({
-        hidden = false,
-    })
+    TriggerEvent("bendixboy-speedometer:client:showSeatbeltIcon", true)
 end
 
 local function hideSeatbeltIcon()
-    SendNUIMessage({
-        hidden = true,
-    })
+    TriggerEvent("bendixboy-speedometer:client:showSeatbeltIcon", false)
 end
 
 
