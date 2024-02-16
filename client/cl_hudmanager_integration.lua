@@ -5,6 +5,10 @@ local function showSeatbeltIcon()
 end
 
 local function hideSeatbeltIcon()
+    -- Apparently, opening the "ESC" menu makes you exit the car, according to Ox-Lib onCache.
+    -- If PauseMenu is active when this is called, we ignore it and leave the seatbelt icon as is.
+    -- Don't ask why its not required for ShowSeatbeltIcon, I have no clue.
+    if IsPauseMenuActive() then return end
     TriggerEvent("bendixboy-speedometer:client:showSeatbeltIcon", false)
 end
 
